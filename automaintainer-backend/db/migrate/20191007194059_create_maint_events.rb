@@ -6,6 +6,7 @@ class CreateMaintEvents < ActiveRecord::Migration[5.2]
       t.string :event_type
       t.text :comment
       t.float :cost
+      t.integer :vehicle_id
 
       t.timestamps
     end
