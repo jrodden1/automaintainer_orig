@@ -114,3 +114,132 @@ Migrating to CreateMaintEvents (20191007194059)
   [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
   [1m[36mMaintEvent Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "maint_events" LIMIT $1[0m  [["LIMIT", 1]]
   [1m[36mVehicle Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (0.7ms)[0m  [1m[32mINSERT INTO "vehicles" ("year", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["year", 1997], ["created_at", "2019-10-07 20:10:33.442163"], ["updated_at", "2019-10-07 20:10:33.442163"]]
+  [1m[35m (1.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("year", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["year", 2020], ["created_at", "2019-10-07 20:11:11.160899"], ["updated_at", "2019-10-07 20:11:11.160899"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("year", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["year", 1875], ["created_at", "2019-10-07 20:12:06.744066"], ["updated_at", "2019-10-07 20:12:06.744066"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (0.4ms)[0m  [1m[32mINSERT INTO "vehicles" ("year", "make", "model", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["year", 1971], ["make", "Chevy"], ["model", "Custom/10"], ["color", "Gold"], ["created_at", "2019-10-07 20:17:35.789213"], ["updated_at", "2019-10-07 20:17:35.789213"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Create (0.5ms)[0m  [1m[32mINSERT INTO "vehicles" ("year", "make", "model", "color", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["year", 1997], ["make", "Chevy"], ["model", "Sedan"], ["color", "blue"], ["created_at", "2019-10-07 20:35:52.043069"], ["updated_at", "2019-10-07 20:35:52.043069"]]
+  [1m[35m (40.7ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mVehicle Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "vehicles" LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT "vehicles".* FROM "vehicles"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMaintEvent Create (0.6ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", 100], ["vehicle_id", 5], ["created_at", "2019-10-07 20:36:46.819410"], ["updated_at", "2019-10-07 20:36:46.819410"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Destroy (0.5ms)[0m  [1m[31mDELETE FROM "maint_events" WHERE "maint_events"."id" = $1[0m  [["id", 2]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", 1000000], ["vehicle_id", 5], ["created_at", "2019-10-07 20:37:44.054731"], ["updated_at", "2019-10-07 20:37:44.054731"]]
+  [1m[35m (40.4ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMaintEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", 100000], ["vehicle_id", 5], ["created_at", "2019-10-07 20:38:39.978092"], ["updated_at", "2019-10-07 20:38:39.978092"]]
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMaintEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", 0], ["vehicle_id", 5], ["created_at", "2019-10-07 20:39:07.505404"], ["updated_at", "2019-10-07 20:39:07.505404"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[36mMaintEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", -9], ["vehicle_id", 5], ["created_at", "2019-10-07 20:39:23.603275"], ["updated_at", "2019-10-07 20:39:23.603275"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 5], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "event_type", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["mileage", 30000], ["event_type", "Oil Change"], ["vehicle_id", 5], ["created_at", "2019-10-07 20:40:22.354082"], ["updated_at", "2019-10-07 20:40:22.354082"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[36mMaintEvent Create (0.4ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "id"[0m  [["mileage", 340000], ["vehicle_id", 6], ["created_at", "2019-10-07 20:41:04.227674"], ["updated_at", "2019-10-07 20:41:04.227674"]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.3ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Create (0.3ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "event_type", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["mileage", 340000], ["event_type", "Transmission Rebuild"], ["vehicle_id", 6], ["created_at", "2019-10-07 20:41:50.050732"], ["updated_at", "2019-10-07 20:41:50.050732"]]
+  [1m[35m (40.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.2ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Create (0.5ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "event_type", "cost", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["mileage", 67788], ["event_type", "Troubleshooting"], ["cost", 57.99], ["vehicle_id", 6], ["created_at", "2019-10-07 20:43:41.837957"], ["updated_at", "2019-10-07 20:43:41.837957"]]
+  [1m[35m (40.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Update (41.7ms)[0m  [1m[33mUPDATE "maint_events" SET "cost" = $1, "updated_at" = $2 WHERE "maint_events"."id" = $3[0m  [["cost", 0.0], ["updated_at", "2019-10-07 20:44:08.040679"], ["id", 10]]
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Update (0.4ms)[0m  [1m[33mUPDATE "maint_events" SET "cost" = $1, "updated_at" = $2 WHERE "maint_events"."id" = $3[0m  [["cost", 87.88], ["updated_at", "2019-10-07 20:46:03.066341"], ["id", 10]]
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mVehicle Load (0.5ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" WHERE "vehicles"."id" = $1 LIMIT $2[0m  [["id", 6], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mMaintEvent Create (0.7ms)[0m  [1m[32mINSERT INTO "maint_events" ("mileage", "completed", "event_type", "cost", "vehicle_id", "created_at", "updated_at") VALUES ($1, $2, $3, $4, $5, $6, $7) RETURNING "id"[0m  [["mileage", 67788], ["completed", "2019-10-07 20:47:09.835568"], ["event_type", "Troubleshooting"], ["cost", 88.89], ["vehicle_id", 6], ["created_at", "2019-10-07 20:47:13.992056"], ["updated_at", "2019-10-07 20:47:13.992056"]]
+  [1m[35m (1.1ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mVehicle Load (0.4ms)[0m  [1m[34mSELECT  "vehicles".* FROM "vehicles" ORDER BY "vehicles"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mMaintEvent Exists (0.5ms)[0m  [1m[34mSELECT  1 AS one FROM "maint_events" WHERE "maint_events"."vehicle_id" = $1 LIMIT $2[0m  [["vehicle_id", 6], ["LIMIT", 1]]
+  [1m[36mMaintEvent Load (0.2ms)[0m  [1m[34mSELECT "maint_events".* FROM "maint_events" WHERE "maint_events"."vehicle_id" = $1[0m  [["vehicle_id", 6]]
