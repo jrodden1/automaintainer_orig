@@ -8,22 +8,22 @@
 .DS_Store
 
 # Ignore bundler config.
-/.bundle
+/automaintainer-backend/.bundle
 
 # Ignore all logfiles and tempfiles.
-/log/*
-/tmp/*
-!/log/.keep
-!/tmp/.keep
+/automaintainer-backend/log/*
+/automaintainer-backend/tmp/*
+!/automaintainer-backend/log/.keep
+!/automaintainer-backend/tmp/.keep
 
 # Ignore uploaded files in development
-/storage/*
-!/storage/.keep
+/automaintainer-backend/storage/*
+!/automaintainer-backend/storage/.keep
 
-.byebug_history
+/automaintainer-backend/.byebug_history
 
 # Ignore master key for decrypting credentials and more.
-/config/master.key
+/automaintainer-backend/config/master.key
 
 # Ignore NOTES.md file
 NOTES.md
